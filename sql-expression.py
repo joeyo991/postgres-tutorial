@@ -29,7 +29,7 @@ track_table = Table(
     Column("Name", String),
     Column("AlbumId", Integer, ForeignKey("album_table.AlbumId")),
     Column("MediaTypeId", Integer, primary_key=False),
-    Column("GenreId", String),
+    Column("GenreId", Integer, primary_key=False),
     Column("Composer", String),
     Column("Milliseconds", Integer),
     Column("Bytes", Integer),
